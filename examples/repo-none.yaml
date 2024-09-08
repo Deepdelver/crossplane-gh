@@ -10,7 +10,7 @@ spec:
     registry: ttl.sh
     app:
       language: go
-      host: my-repo.deeps.hsh
+      host: my-repo.acme.com
       namespace: a-team
     db:
       enabled: false
