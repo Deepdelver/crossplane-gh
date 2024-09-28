@@ -39,8 +39,8 @@ test-once: package-generate-apply
 test-watch:
   watchexec -w kcl -w tests "just test-once"
 
-# Creates a kind cluster, installs Crossplane, providers, and packages, waits until they are healthy, and runs tests.
-cluster-create: package-generate _cluster-create-kind
+# Creates a k3s cluster, installs Crossplane, providers, and packages, waits until they are healthy, and runs tests.
+cluster-create: package-generate _cluster-create-k3s
   just package-apply
   sleep 60
   kubectl wait --for=condition=healthy provider.pkg.crossplane.io --all --timeout={{timeout}}
@@ -48,10 +48,10 @@ cluster-create: package-generate _cluster-create-kind
 
 # Destroys the cluster
 cluster-destroy:
-  kind delete cluster
+  k3s-uninstall
 
-# Creates a kind cluster
-_cluster-create-kind:
-  -kind create cluster
+# Creates a k3s cluster
+_cluster-create-k3s:
+  -k3s create cluster
   helm upgrade --install crossplane crossplane --repo https://charts.crossplane.io/stable --namespace crossplane-system --create-namespace --wait
   for provider in `ls -1 providers | grep -v config`; do kubectl apply --filename providers/$provider; done
