@@ -13,4 +13,4 @@ server:
   ingress:
     enabled: true
     ingressClassName: traefik
-    hostname: argocd.34.138.95.252.nip.io
+    hostname: argocd.deeps.hsh

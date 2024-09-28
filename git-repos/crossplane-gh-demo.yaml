@@ -2,16 +2,16 @@
 apiVersion: devopstoolkitseries.com/v1alpha1
 kind: GitHubClaim
 metadata:
-  name: crossplane-gh-demo
+  name: crossplane-deeps-demo
 spec:
-  id: crossplane-gh-demo
+  id: crossplane-deeps-demo
   parameters:
     public: true
     registry: ttl.sh
     app:
       language: go
-      host: my-repo.acme.com
-      namespace: a-team
+      host: my-repo.deeps.hsh
+      namespace: deeps
     db:
       enabled: false
     repo:
