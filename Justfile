@@ -52,6 +52,6 @@ cluster-destroy:
 
 # Creates a velad cluster
 _cluster-create-velad:
-  -velad create cluster
+  -velad install
   helm upgrade --install crossplane crossplane --repo https://charts.crossplane.io/stable --namespace crossplane-system --create-namespace --wait
   for provider in `ls -1 providers | grep -v config`; do kubectl apply --filename providers/$provider; done
