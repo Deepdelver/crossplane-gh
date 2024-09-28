@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/deepdelver/crossplane-gh
+    repoURL: https://github.com/Deepdelver/crossplane-gh
     targetRevision: HEAD
     path: apps
   destination:
@@ -27,7 +27,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/deepdelver/crossplane-gh
+    repoURL: https://github.com/Deepdelver/crossplane-gh
     targetRevision: HEAD
     path: git-repos
   destination:

@@ -1,11 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: dot-github-template-deepdelver
-  title: dot-github-template-deepdelver
+  name: dot-github-template-Deepdelver
+  title: dot-github-template-Deepdelver
   description: Create and Manage GitHub repositories
 spec:
-  owner: deepdelver/crossplane-gh
+  owner: Deepdelver/crossplane-gh
   type: service
   parameters:
     - title: Service Definition
@@ -53,7 +53,7 @@ spec:
           properties:
             user:
               type: string
-              default: deepdelver
+              default: Deepdelver
         gitops:
           type: object
           properties:
@@ -63,7 +63,7 @@ spec:
               pattern: '^(true|false)*$'
             user:
               type: string
-              default: deepdelver
+              default: Deepdelver
             repo:
               type: string
               default: crossplane-gh

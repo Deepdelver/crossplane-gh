@@ -8,7 +8,8 @@ Feel free to say "No" and inspect the script if you prefer setting up resources 
 
 rm -f .env
 
-export KUBECONFIG=$PWD/kubeconfig.yaml
+# export KUBECONFIG=$PWD/kubeconfig.yaml
+export KUBECONFIG=/root/.kube/config
 echo "export KUBECONFIG=$KUBECONFIG" >> .env
 
 if [ -z $CLUSTER_TYPE ]; then

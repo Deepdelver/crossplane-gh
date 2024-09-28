@@ -1,15 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: dot-github-deepdelver
+  name: dot-github-Deepdelver
   description: Silly description of dot-github
   annotations:
-    github.com/project-slug: deepdelver/crossplane-gh
+    github.com/project-slug: Deepdelver/crossplane-gh
     backstage.io/kubernetes-id: dot
     backstage.io/kubernetes-namespace: git-repos
     backstage.io/kubernetes-label-selector: app.kubernetes.io/name=dot-github
 spec:
   type: infra
   lifecycle: production
-  owner: deepdelver/crossplane-gh
+  owner: Deepdelver/crossplane-gh
   system: DevOpsCatalog
