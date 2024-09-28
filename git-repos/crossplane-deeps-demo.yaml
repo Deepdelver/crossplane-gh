@@ -11,7 +11,7 @@ spec:
     app:
       language: go
       host: my-repo.deeps.hsh
-      namespace: deeps
+      namespace: git-repos
     db:
       enabled: false
     repo:
