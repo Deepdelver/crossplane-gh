@@ -15,8 +15,8 @@ spec:
     db:
       enabled: false
     repo:
-      user: vfarcic
+      user: Deepdelver
     gitops:
       enabled: true
-      user: vfarcic
+      user: Deepdelver
       repo: crossplane-gh
